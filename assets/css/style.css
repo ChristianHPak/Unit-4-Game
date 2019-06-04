@@ -23,3 +23,8 @@ button:hover{
 #randomscore{
     text-align: center;
 }
+
+#crystals{
+    padding: 20px;
+    margin-top: 20px;
+}
