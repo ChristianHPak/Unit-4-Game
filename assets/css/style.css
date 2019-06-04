@@ -1,15 +1,10 @@
-#header {}
-
-#directions {
-    width: 400px;
-    padding: 20px;
+.directions {
+    text-align: center;
 }
 
-#randomScore {}
-
-img {
-    width: 100px;
-    height: 100px;
+#directions {
+    width: 600px;
+    padding: 20px;
 }
 
 button{
@@ -18,4 +13,13 @@ button{
 
 button:hover{
     cursor: pointer;
+}
+
+.page-header{
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#randomscore{
+    text-align: center;
 }
