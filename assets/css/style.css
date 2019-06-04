@@ -1,0 +1,13 @@
+#header {}
+
+#directions {
+    width: 400px;
+    padding: 20px;
+}
+
+#randomScore {}
+
+img {
+    width: 150px;
+    height: 150px;
+}
