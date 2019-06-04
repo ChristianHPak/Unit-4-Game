@@ -12,16 +12,43 @@ function randomNumber() {
     randomScore = Math.floor(Math.random() * (max - min + 1)) + min;
 }
 randomNumber();
-$("#randomScore").text(randomScore);
+$("#randomscore").text(randomScore);
 
 function reset() {
     randomNumber();
-    $("#randomScore").text(randomScore);
-    $("#userScore").text(userScore);
-
+    $("#randomscore").text(randomScore);
+    $("#userscore").text(userScore);
+    crystalNumber();
 }
 
-buttonScore = Math.floor((Math.random() * 12)
+function crystalNumber() {
+    buttonScore = Math.floor((Math.random() * 12));
+    $("#emerald").attr(buttonScore);
+    $("#diamond").attr(buttonScore);
+    $("#ruby").attr(buttonScore);
+    $("#topaz").attr(buttonScore);
+    console.log(buttonScore);
+}
+
+crystalNumber();
+
+$(".button").on("click", function () {
+    var crystalValue = ($(this).attr(buttonScore))
+
+    crystalValue = parseInt(crystalValue);
+
+    userScore += crystalValue;
+
+    $("#userscore").text(userScore)
+
+    if(userScore ===randomScore){
+        wins++;
+        reset();
+    }else{
+        losses++;
+        reset();
+    }
+})
 
 //create function reset()
 //create new number
