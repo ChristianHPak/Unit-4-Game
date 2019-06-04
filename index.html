@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -16,20 +19,31 @@
         <p>The values of the crystals are hidden from you until you click it.</p>
         <p>Each time the game starts, the game changes the values of the crystals.</p>
     </section>
-    <div id= "randomScore">
-        <p>" "</p>
+    <div>
+        <p id="randomScore"></p>
     </div>
     <div>
         <p id="wins"></p>
-        <p id="loses"></p>
+        <p id="losses"></p>
     </div>
     <div id="crystals">
-        <img src="assets/images/68723114-cartoon-realistic-gems-jewels-diamond-brilliant-vector-gemstone-and-crystal-precious-glass-elements-.jpg" alt="" id = "emerald">
-        <img src="assets/images/diamond.jpg" alt="" id = "diamond">
-        <img src="assets/images/index.jpeg" alt="" id = "ruby">
-        <img src="assets/images/topaz.jpg" alt="" id = "topaz">
-    </div   
-    <div>r
+        <button id="emerald"> 
+            <img src="assets/images/68723114-cartoon-realistic-gems-jewels-diamond-brilliant-vector-gemstone-and-crystal-precious-glass-elements-.jpg" alt="emerald">
+        </button>
+
+        <button id="diamond">
+            <img src="assets/images/diamond.jpg" alt="diamond">
+        </button>
+
+        <button id="ruby">
+            <img src="assets/images/index.jpeg" alt="ruby">
+        </button>
+
+        <button id="topaz">
+            <img src="assets/images/topaz.jpg" alt="tpoaz">
+        </button>
+    </div>
+    <div>
         <p>You're score: </p>
         <p id="userScore"></p>
     </div>
