@@ -1,10 +1,14 @@
+div#preload{
+    display: none;
+}
+
 .directions {
     text-align: center;
 }
 
 body{
-    /* background-image:url(https://images.pexels.com/photos/1029604/pexels-photo-1029604.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); */
-    background: grey;
+    background-image:url(http://www.seekgif.com/uploads/blue-low-poly-colors-hd-motion-background-10.jpeg);
+    /* background: grey; */
 }
 
 #directions {
@@ -24,7 +28,6 @@ button:hover{
 .page-header{
     text-align: center;
     padding: 50px 20px;
-    color: white;
     font-weight: bold;
 }
 
@@ -48,7 +51,7 @@ img:active{
 }
 
 .reset{
-    margin-left: 60px;
+    margin-left: 55px;
 }
 
 #crystals,
@@ -63,6 +66,10 @@ img:active{
     padding: 20px;
 }
 
-#win-or-lose{
-    color: red;
+.right{
+    text-align: center;
+}
+
+#scorekeeper{
+    font-size: 30px;
 }
