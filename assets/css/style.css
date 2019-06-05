@@ -4,12 +4,13 @@
 
 body{
     /* background-image:url(https://images.pexels.com/photos/1029604/pexels-photo-1029604.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); */
+    background: grey;
 }
 
 #directions {
     width: 600px;
     padding: 20px;
-    background-color: bisque;
+    background-color: lightgray;
 }
 
 button{
@@ -23,6 +24,8 @@ button:hover{
 .page-header{
     text-align: center;
     padding: 50px 20px;
+    color: white;
+    font-weight: bold;
 }
 
 #randomscore{
@@ -58,4 +61,8 @@ img:active{
 
 #randomscore{
     padding: 20px;
+}
+
+#win-or-lose{
+    color: red;
 }
