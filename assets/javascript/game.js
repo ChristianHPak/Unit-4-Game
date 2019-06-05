@@ -19,7 +19,7 @@ function Values() {
 
 function GameSet() {
     Values();
-    totalScore = 0;
+    userScore = 0;
     $("#randomscore").text(randomScore);
     $("#userscore").text(userScore);
     $("#emerald").attr("data-crystalvalue", crystal1Num);
@@ -62,10 +62,15 @@ $(".crystal").on("click", function () {
 
     if (userScore === randomScore) {
         win();
-        reset();
+        GameSet()
+    } 
 
-    } else {
+    if (userScore !== randomScore){
         loss();
-        reset();
+        GameSet()
     }
-})
+});
+
+$(".reset").on("click", function(){
+    GameSet()
+});

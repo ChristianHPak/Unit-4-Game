@@ -2,9 +2,14 @@
     text-align: center;
 }
 
+body{
+    /* background-image:url(https://images.pexels.com/photos/1029604/pexels-photo-1029604.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); */
+}
+
 #directions {
     width: 600px;
     padding: 20px;
+    background-color: bisque;
 }
 
 button{
@@ -24,7 +29,33 @@ button:hover{
     text-align: center;
 }
 
-#crystals{
+img{
+    width: 100px;
+    height: 100px;
+}
+
+img:hover{
+    opacity: .3;
+    cursor: pointer;
+}
+
+img:active{
+    opacity: .7;
+    cursor: pointer;
+}
+
+.reset{
+    margin-left: 60px;
+}
+
+#crystals,
+#scorekeeper,
+#reset{
+    width: 1440px;
+    padding: 0px;
+    padding-top: 20px;
+}
+
+#randomscore{
     padding: 20px;
-    margin-top: 20px;
 }

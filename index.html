@@ -2,18 +2,13 @@
 <html>
 
 <head>
-        <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="assets/javascript/game.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-    <style>
-        img {
-            width: 100px;
-            height: 100px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+        integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
 </head>
 
 <body>
@@ -27,37 +22,47 @@
             time the game starts, the game changes the values of the crystals.</p>
     </section>
     <div>
-        <h2 id="randomscore">SOME RANDOM NUMBER DANG IT</h2>
+        <h2 id="randomscore"></h2>
     </div>
+
     <div id="crystals" class="row">
         <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
-            <img id="emerald" class="crystal img-responsive"
-                src="assets/images/68723114-cartoon-realistic-gems-jewels-diamond-brilliant-vector-gemstone-and-crystal-precious-glass-elements-.jpg"
-                alt="emerald">
+            <img id="emerald" class="crystal img-responsive" src="assets/images/crystal3.png" alt="emerald">
         </div>
         <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
-            <img id="diamond" class="crystal img-responsive" src="assets/images/diamond.jpg" alt="diamond">
+            <img id="diamond" class="crystal img-responsive" src="assets/images/crystal2.png" alt="diamond">
         </div>
         <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
-            <img id="ruby" class="crystal img-responsive" src="assets/images/index.jpeg" alt="ruby">
+            <img id="ruby" class="crystal img-responsive" src="assets/images/Crystal1.png" alt="ruby">
         </div>
         <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
-            <img id="topaz" class="crystal img-responsive" src="assets/images/topaz.jpg" alt="topaz">
+            <img id="topaz" class="crystal img-responsive" src="assets/images/crystal4.png" alt="topaz">
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-4">
-            <p>You're score: </p>
-            <p id="userscore">0</p>
-            <div id="win-or-lose">0</div>
+
+    <div class="row" id="scorekeeper">
+        <div class="col-md">
+            <p>You're score: <span id="userscore"></span></p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md">
             <p>Wins: <span id="wins">0</span></p>
         </div>
         <div>
             <p>Losses: <span id="losses">0</span></p>
         </div>
     </div>
+
+    <div class="row" id="reset">
+        <div class="col-md-5">
+            <h3><span id="win-or-lose"></span></h3>
+        </div>
+        <div class="col-md-6">
+            <button class="btn btn-primary reset">New Game</button>
+        </div>
+        
+    </div>
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 
 </html>
