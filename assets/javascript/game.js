@@ -59,8 +59,12 @@ $(".crystal").on("click", function () {
     if (userScore === randomScore) {
         win();
         GameSet();
+        $("#win-or-lose").text("YOU WIN!")
+
     } else if (userScore > randomScore) {
         loss();
         GameSet();
+        $("#win-or-lose").text("YOU LOSE!")
+        
     }
 });
