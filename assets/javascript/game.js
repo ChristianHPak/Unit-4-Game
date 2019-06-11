@@ -36,11 +36,13 @@ function GameSet() {
 function win() {
     $("#win-or-lose").text("YOU WIN!")
     wins++;
+    GameSet();
 }
 
 function loss() {
     $("#win-or-lose").text("YOU LOSE!")
     losses++;
+    GameSet();
 }
 
 GameSet();
@@ -63,10 +65,6 @@ $(".crystal").on("click", function () {
         $("#win-or-lose").text("YOU WIN!");
     } else if (userScore > randomScore) {
         loss();
-        $("#win-or-lose").text("YOU LOSE!");
+        $("#win-or-lose").text("YOU LOSE!");c
     }
-});
-
-$(".reset").on("click", function () {
-    GameSet()
 });
