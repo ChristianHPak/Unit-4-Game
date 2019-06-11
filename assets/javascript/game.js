@@ -48,10 +48,6 @@ function loss() {
 GameSet();
 
 $(".crystal").on("click", function () {
-    // if (userScore >= randomScore) {
-    //     return;
-    // }
-
     var crystalValue = ($(this).attr("data-crystalvalue"))
 
     crystalValue = parseInt(crystalValue);
@@ -62,9 +58,7 @@ $(".crystal").on("click", function () {
 
     if (userScore === randomScore) {
         win();
-        $("#win-or-lose").text("YOU WIN!");
     } else if (userScore > randomScore) {
         loss();
-        $("#win-or-lose").text("YOU LOSE!");c
     }
 });
