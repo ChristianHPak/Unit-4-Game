@@ -13,8 +13,8 @@ You will be given a random number at the start of the game. There are four cryst
 https://christianhpak.github.io/Unit-4-Game/
 
 #### Built With
-HTML5
-CSS3
-Twitter-Bootstrap - Framework
-JavaScript
-jQuery - JavaScript Library
+1. HTML5
+2. CSS3
+3. Twitter-Bootstrap - Framework
+4. JavaScript
+5. jQuery - JavaScript Library
